@@ -95,12 +95,15 @@ export default {
         },
         handlePush() {
             this.$router.push('/profile')
+            this.showModel = !this.showModel;
         },
         handleAddJob() {
             this.$router.push('/add-job')
+            this.showModel = !this.showModel;
         },
         handleMenu() {
             this.menuShow = !this.menuShow
+            this.showModel = !this.showModel;
         }
     },
     components: { Loader },
