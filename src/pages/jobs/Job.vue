@@ -1,6 +1,5 @@
 <template>
-    <Loader v-if="loading" />
-    <section class="jobs" v-if="!loading">
+    <section class="jobs">
         <div class="container">
             <!-- Search Jobs -->
             <div class="search_jobs">
@@ -11,7 +10,8 @@
             <div class="jobs_wrapper">
                 <h1>Showing {{ jobs?.length }} Jobs</h1>
                 <!-- flexbox container -->
-                <div class="flexBox">
+                <Loader v-if="loading" />
+                <div class="flexBox" v-if="!loading">
                     <!-- Single Jobs -->
                     <Job v-for="job in jobs" :key="job?._id" :job="job" />
                 </div>
