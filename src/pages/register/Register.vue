@@ -57,7 +57,7 @@ export default {
                 fullname: "",
                 email: "",
                 password: "",
-                avatar: null
+                avatar: "https://firebasestorage.googleapis.com/v0/b/vue-jobportal.appspot.com/o/profile_img%2F3135715.png?alt=media&token=147ee30a-05e6-4437-885d-7ba874445c03"
             },
             progress: null,
             loading: false,
